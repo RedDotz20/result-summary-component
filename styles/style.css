@@ -1,0 +1,44 @@
+:root {
+	font-family: HankenGrotesk, Arial;
+	line-height: 1.5;
+	font-weight: 400;
+
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+
+	/*** Primary Colors */
+	--Light-Red: hsl(0, 100%, 67%);
+	--Orangey-Yellow: hsl(39, 100%, 56%);
+	--Green-Teal: hsl(166, 100%, 37%);
+	--Cobalt-Blue: hsl(234, 85%, 45%);
+
+	/*** Gradients */
+
+	/** --background-- */
+	--Light-Slate-Blue: hsl(252, 100%, 67%);
+	--Light-Royal-Blue: hsl(241, 81%, 54%);
+
+	/** --circle-- */
+	--Violet-Blue: hsla(256, 72%, 46%, 1);
+	--Persian-Blue: hsla(241, 72%, 46%, 0);
+}
+
+html {
+	font-family: HankenGrotesk, Arial;
+}
+
+body {
+	margin: 0;
+	display: flex;
+	place-items: center;
+	min-width: 320px;
+	min-height: 100vh;
+}
+
+h1 {
+	font-size: 3.2em;
+	line-height: 1.1;
+}
+p {
+	font-size: 18px;
+}

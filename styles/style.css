@@ -1,3 +1,9 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
 :root {
 	font-family: HankenGrotesk, Arial;
 	line-height: 1.5;
@@ -35,10 +41,74 @@ body {
 	min-height: 100vh;
 }
 
-h1 {
-	font-size: 3.2em;
-	line-height: 1.1;
-}
 p {
-	font-size: 18px;
+	font-size: 0.75rem;
+
+	text-align: center;
+	line-height: normal;
+	padding: 0 1rem;
+}
+
+#app {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+}
+
+.result-container {
+	min-width: 14rem;
+	background: linear-gradient(
+		to bottom,
+		var(--Light-Slate-Blue),
+		var(--Light-Royal-Blue)
+	);
+	padding: 0 1rem;
+	color: white;
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 1rem;
+}
+
+.result-container h3 {
+	margin: 1rem;
+}
+
+.result-container h2 {
+	margin: 1rem 1rem 0.25rem 1rem;
+}
+
+.result-container p {
+	margin-bottom: 1.75rem;
+}
+
+.stats {
+	background: linear-gradient(
+		to bottom,
+		var(--Violet-Blue) 70%,
+		hsla(256, 72%, 46%, 1) 70%,
+		rgba(255, 255, 255, 0) 100%
+	);
+	border-radius: 50%;
+	height: 8rem;
+	width: 8rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.stats .header {
+	font-size: 2.75rem;
+	font-weight: 700;
+	height: 2.2ch;
+}
+
+.stats .subheader {
+	font-size: 0.8rem;
+	font-weight: 500;
+	color: rgba(255, 255, 255, 0.7);
 }
